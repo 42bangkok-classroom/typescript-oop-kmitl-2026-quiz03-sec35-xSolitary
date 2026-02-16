@@ -1,17 +1,24 @@
 export class Person {
-  firstname: string = ""
-  lastname: string = ""
-  private _age: number = 0
+  firstname: string
+  lastname: string
+  age: number
+  private _a: number
+
   static COUNTRY: string = "Thailand"
 
-
+  constructor() {
+    this.firstname = ""
+    this.lastname = ""
+    this.age = 0
+    this._a = 1
+  }
 
   setAge(age: number): void {
-    this._age = age
+    this.age = age
   }
 
   getAge(): number {
-    return this._age
+    return this.age
   }
 
   getFullName(): string {
