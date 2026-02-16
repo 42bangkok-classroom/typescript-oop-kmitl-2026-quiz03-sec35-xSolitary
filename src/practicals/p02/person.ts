@@ -3,6 +3,7 @@ export class Person {
   lastname: string
 
   private _age: number
+
   static COUNTRY: string = "Thailand"
 
   constructor() {
@@ -13,6 +14,8 @@ export class Person {
   get age(): number {
     return this._age
   }
+
+  set age(_value: number) {}
 
   setAge(age: number): void {
     if (age >= 0) {
