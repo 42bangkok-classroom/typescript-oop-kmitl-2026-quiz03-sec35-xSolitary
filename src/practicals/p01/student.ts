@@ -7,7 +7,7 @@ export class Student {
     this.lastname = ""
   }
 
-  printName(){
+  printName(): void {
     console.log(`${this.firstname} ${this.lastname}`)
   }
 }
