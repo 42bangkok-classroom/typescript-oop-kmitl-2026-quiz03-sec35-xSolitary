@@ -3,13 +3,15 @@ export class Person {
   lastname: string
 
   private _age: number
-
   static COUNTRY: string = "Thailand"
 
   constructor() {
     this.firstname = ""
     this.lastname = ""
     this._age = 0
+  }
+  get age(): number {
+    return this._age
   }
 
   setAge(age: number): void {
